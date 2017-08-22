@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>用户登录/注册</title>
+		<link rel="stylesheet" href="css/style.css" />
+		<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="js/ajaxOperation.js" ></script>
+		<script type="text/javascript" src="js/user.js" ></script>
+	</head>
+	<body>
+		<fieldset id="login">
+			<form method="post" action="#">
+				<input type="text" name="userName" id="userName" placeholder="请输入用户名！" autofocus="autofocus" /><br />
+				<input type="password" name="passWord" id="passWord" placeholder="请输入密码！" class="test" /><br />
+				<button type="button" id="btn_login">登录</button>
+				<button type="button" id="btn_register">注册</button>
+			</form>
+			<div class="top_img"></div>
+		</fieldset>
+		<fieldset id="register">
+			<form method="post" action="#" id="MyForm">
+				<div class="div_register"><input type="text" name="userName" id="userName2" placeholder="用户名"/>
+					<div class="message"></div>
+					<div class="message_jiao"></div>
+				</div>
+				<div class="div_register"><input type="password" name="passWord" id="passWord2" placeholder="密码" value="" />
+					<div class="message"></div>
+					<div class="message_jiao"></div>
+				</div>
+				<div class="div_register"><input type="password" name="checkPwd" id="checkPwd" placeholder="确认密码" value="" />
+					<div class="message"></div>
+					<div class="message_jiao"></div>
+				</div>
+				<div class="div_register"><input type="text" name="emain" id="email" placeholder="邮箱地址" />
+					<div class="message"></div>
+					<div class="message_jiao"></div>
+				</div>
+				<fieldset id="sex">
+					<legend >性别:</legend>
+					<input type="radio" name="sex" value="0" id="man" /><label for="man">男</label>
+					<input type="radio" name="sex" value="1" id="woman" /><label for="woman">女</label><br />
+				</fieldset>
+				<fieldset id="hobby">
+					<legend>爱好:</legend>
+					<input type="checkbox" name="hobby" value="red" id="read" /><label for="read">读书</label>
+					<input type="checkbox" name="hobby" value="music" id="music" /><label for="music">音乐</label>
+					<input type="checkbox" name="hobby" value="sleep" id="sleep" /><label for="sleep">睡觉</label>
+				</fieldset>
+				<fieldset id="adress">
+					<legend>地址:</legend>
+					<select id="province"></select>&nbsp;&nbsp;&nbsp;&nbsp;
+					<select id="city"></select>
+				</fieldset>
+				<button type="button" id="btn_ok">注册</button>
+			</form>
+		</fieldset>
+	</body>
+
+</html>

@@ -1,0 +1,251 @@
+body{
+	font-family: "微软雅黑";
+}
+.main{
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 3%;
+}
+table{
+	margin: 0 auto;
+	width: 100%;
+}
+tr{
+	height: 50px;
+}
+tbody tr:hover{
+	background-color: rgba(0,0,0,0.5);
+	cursor: default;
+}
+thead tr:hover{
+	cursor: default;
+}
+table,tr,td{
+	border-collapse: collapse;
+}
+
+tbody i:hover{
+	color: white;
+	cursor: pointer;
+	transition: 0.5s;
+}
+tfoot i:hover{
+	color: rgb(99,96,92);
+	cursor: pointer;
+	transition: 0.5s;
+}
+i{
+	transition: 0.5s;
+}
+#myTbody input{
+	border:1px solid red;
+}
+/*搜索框*/
+.soso{
+	margin-top:10px ;
+	text-align: center;
+	padding-left: 15px;
+	height: 30px;
+	position: relative;
+	overflow:hidden;
+}
+.soso button{
+	width: 100px;
+	height: 30px;
+	float: left;
+	background-color: rgb(51,51,51);
+	border: 0px;
+	color: white;
+	font-size: 15px;
+}
+button:focus{
+	outline: none;
+}
+.soso input{
+	margin-left: 10px;
+	width: 35%;
+	height: 24px;
+	float: left;
+}
+button:hover{
+	cursor: pointer;
+	transition:0.5s;
+	background-color: rgb(99,96,92);
+}
+button{
+	transition: 0.5s;
+}
+.soso .order{
+	width: 60px;
+	height: 30px;
+	float: right;
+	margin-right: 15px;
+	line-height: 20px;
+	font-size: 20px;
+}
+.soso .order span{
+	font-size: 16px;
+	transition: 0.5s;
+}
+.soso .order:hover{
+	cursor: pointer;
+	color: rgb(99,96,92);
+}
+tfoot button{
+	padding: 0px 20px;
+	height: 30px;
+	background-color: rgb(51,51,51);
+	border: 0px;
+	color: white;
+	font-size: 15px;
+	float: left;
+	margin-left: 13px;
+}
+tfoot tr td:nth-child(3) i{
+	display:inline-block;
+	width: 40%;;
+}
+tfoot tr td:nth-child(2){
+	font-size: 20px;;
+}
+/*增加用户信息界面*/
+.add{
+	width: 350px;
+	border:1px solid #ccc;
+	border-radius: 2px;
+	box-shadow: 0px 0px 1px #ccc;
+	margin: 50px auto;
+	position: relative;
+	overflow: hidden;
+	display: none;
+	
+}
+.add form{
+	width: 350px;
+	margin: 0 auto;
+	text-align: center;
+}
+.add input{
+	width: 200px;
+	height: 30px;
+	margin: 18px auto;
+	border:1px solid #CCCCCC;
+	border-radius: 5px;
+	box-shadow: none;
+}
+.add input:focus{
+	transition: 0.3s;
+	outline: none;
+	box-shadow: 0px 0px 5px rgb(99,96,92);
+}
+.add button{
+	width: 100px;
+	height: 30px;
+	background-color: rgb(51,51,51);
+	border: 0px;
+	color: white;
+	font-size: 15px;
+	border-radius: 2px;
+}
+.add button:hover{
+	cursor: pointer;
+	transition:0.5s;
+	background-color: rgb(99,96,92);
+}
+#close{
+	width: 100px;
+	height: 100px;
+	background-color: rgb(51,51,51);
+	transform: rotate(-45deg);
+	position: absolute;
+	top: -55px;
+	right: -55px;
+	color: white;
+}
+#close i{
+	position: absolute;
+	top: 32px;
+	left: 5px;
+	transform: rotate(45deg);
+	transition: 0.5s;
+}
+#close i:hover{
+	color: rgba(255,255,255,0.9);
+	transition: 0.5s;
+	cursor: pointer;
+}
+/*更新*/
+#up_close{
+	width: 100px;
+	height: 100px;
+	background-color: rgb(51,51,51);
+	transform: rotate(-45deg);
+	position: absolute;
+	top: -55px;
+	right: -55px;
+	color: white;
+}
+#up_close>i{
+	position: absolute;
+	top: 32px;
+	left: 5px;
+	transform: rotate(45deg);
+	transition: 0.5s;
+}
+#up_close>i:hover{
+	color: rgba(255,255,255,0.9);
+	transition: 0.5s;
+	cursor: pointer;
+}
+#up_id form .fa-user,.fa-key,.fa-phone{
+	position: absolute;
+	left: 53px;
+}
+#up_id form .fa-user{
+	top: 33px;
+}
+#up_id form .fa-key{
+	top: 102px;
+}
+#up_id form .fa-phone{
+	top: 175px;
+}
+/*用户角色修改*/
+#updateRole_inform{
+	padding-left: 20px;
+	margin: 0px;
+}
+#updateRole_inform h5{
+	font-weight: inherit;
+	line-height: 0px;
+}
+.updateRole{
+	width: 100%;
+	display: none;
+	margin-top: 70px;
+}
+.updateRole tr:hover{
+	background-color: white;
+}
+.updateRole table{
+	width: 80%;
+	margin-left: 0px;
+	text-align: left;
+	margin-left: 20px;
+}
+#updateRole_btn{
+	margin: 25px 0px 25px 20px;
+}
+#updateRole_btn button{
+	padding: 0px 20px;
+	height: 30px;
+	background-color: rgb(51,51,51);
+	border: 0px;
+	color: white;
+	font-size: 15px;
+	margin-right: 15px;
+}
+#updateRole_btn button:hover{
+	background-color: rgb(99,96,92);
+}

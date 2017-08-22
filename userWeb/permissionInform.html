@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>权限信息管理</title>
+		<link rel="stylesheet" href="css/userManager.css" />
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+		<script type="text/javascript" src="js/jquery-3.2.1.min.js" ></script>
+		<script type="text/javascript" src="js/ajaxOperation.js" ></script>
+		<script type="text/javascript" src="js/permissionInform.js" ></script>
+	</head>
+	<body>
+		<div class="main">
+			<div class="soso">
+				<button id="btn_like">搜索</button>
+				<input type="text" placeholder="请输入搜索信息" id="text_like"></input>
+				<div class="order" id="id_order">
+					<i class="fa fa-chevron-circle-down"></i><span>&nbsp;排序</span>
+				</div>
+			</div>
+			<table>
+				<thead>
+					<tr>
+						<th><input type="checkbox" name="check" id="check"></th>
+						<th>编号</th>
+						<th>权限名</th>
+						<th>权限地址</th>
+						<th>注解</th>
+						<th>归属</th>
+						<th>修改</th>
+						<th>删除</th>
+					</tr>
+				</thead>
+				<tbody id="myTbody">
+				</tbody>
+				<tfoot>
+					<tr>
+						<td colspan="6">
+							<button type="button" id="btn_add">增加</button>
+							<button type="button" id="btn_delete">删除</button>
+							<button type="button" id="btn_permission">权限角色管理</button>
+						</td>
+						<td><i class="fa fa-home" title="首页" id="pageFirst"></i></td>
+						<td><i class="fa fa-chevron-left" title="上一页" id="pagePrevious"></i><i class="fa fa-chevron-right" title="下一页" id="pageNext"></i></td>
+						<!--翻页-->
+					</tr>
+				</tfoot>
+			</table>
+		</div>
+		<fieldset class="add" id="add_id">
+			<div id="close">
+				<i class="fa fa-close fa-2x" title="关闭" id="close_i"></i>
+			</div>
+			<form method="post" action="#">
+				<input type="text" placeholder="权限名" id="add_name"/><br />
+				<input type="text" placeholder="权限地址" id="add_url" /><br />
+				<input type="text" placeholder="注解" id="add_remark" /><br />
+				<input type="text" placeholder="归属" id="add_parent" /><br />
+				<button type="button" id="add_ok">提交</button>
+				<button type="reset">重置</button>
+			</form>
+		</fieldset>
+		<!--数据更新-->
+		<fieldset class="add" id="up_id">
+			<div id="up_close">
+				<i class="fa fa-close fa-2x" title="关闭" id="up_close_i"></i>
+			</div>
+			<form method="post" action="#">
+				<i class="fa fa-user"></i><input type="text" placeholder="权限名" id="up_name"/><br />
+				<i class="fa fa-key"></i><input type="text" placeholder="权限地址" id="up_url" /><br />
+				<i class="fa fa-phone"></i><input type="text" placeholder="注解" id="up_remark" /><br />
+				<i class="fa fa-phone"></i><input type="text" placeholder="归属" id="up_parent" /><br />
+				<button type="button" id="up_ok">提交</button>
+				<button type="reset">重置</button>
+			</form>
+		</fieldset>
+		<!--用户角色选择-->
+		<div class="updateRole" id="updateRole_div">
+			<div id="updateRole_inform"></div>
+			<table>
+				<tbody id="updateRole_tbody">		
+				</tbody>
+			</table>
+			<div id="updateRole_btn"></div>
+		</div>
+	</body>
+</html>
+

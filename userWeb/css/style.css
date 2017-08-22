@@ -1,0 +1,120 @@
+body{
+	font-family: "微软雅黑";
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+fieldset{
+	width: 350px;
+	margin: 0 auto;
+	border-radius: 0.3em;
+	border: 2px solid #CCCCCC;
+	text-align: center;
+	margin-top:100px;
+	background-color: white;
+	box-shadow: 0 0 5px #CCCCCC;
+}
+#login{
+	position: relative;
+}
+/*表情*/
+.top_img{
+	width: 350px;
+	height: 100px;
+	position: absolute;
+	top: 0px;
+	background: url(../img/can.png);
+	background-size: 220px;
+	background-repeat: no-repeat;
+	background-position:center;
+	z-index: -1;
+}
+@keyframes imgs{
+	from{top: 0px;}
+	to{top:-90px;}
+}
+@keyframes imgsout{
+	from{top: -90px;}
+	to{top:0px;}
+}
+/*登录*/
+#login input{
+	border:1px solid darkgray;
+	border-radius:0.3em;
+	margin:10px 0px 15px 0px;
+	height: 30px;
+	width: 70%;
+}
+input:focus{
+	transition: 0.3s;
+	outline: none;
+	border-color: #6495ED;
+	box-shadow: 0px 0px 8px #6495ED;
+}
+button{
+	width: 35%;
+	height: 30px;
+	background-color: lightseagreen;
+	border: 0px;
+	border-radius: 0.2em;
+}
+button:focus{
+	outline: none;
+}
+button:hover{
+	transition: 0.3s;
+	cursor: pointer;
+	background: rgba(0,0,0,0.4);
+	color: white;
+}
+/*注册*/
+#register #userName2,#checkPwd,#passWord2,#email{
+	border:1px solid darkgray;
+	border-radius:0.3em;
+	margin:10px 0px 10px 0px;
+	height: 30px;
+	width: 100%;
+}
+#sex,#hobby,#adress{
+	border: 1px solid darkgray;
+	width: 70%;
+	margin:15px auto 10px auto;
+	box-shadow: none;
+}
+#sex,#hobby input,label:hover{
+	cursor: pointer;
+}
+#sex,#hobby input:focus{
+	box-shadow: none;
+}
+.message{
+	width: 150px;
+	height: 30px;
+	background-color: #EEEEEE;
+	position: absolute;
+	left:300px;
+	top: 11px;
+	display: inline-block;
+	border-radius: 5px;
+	display: none;
+	z-index: 999;
+}
+.message_jiao{
+	width: 15px;
+	height: 15px;
+	position: absolute;
+	background-color: #EEEEEE;
+	top: 18px;
+	left: 293px;
+	transform: rotate(45deg);
+	display: none;
+	z-index: 99;
+}
+#MyForm .div_register{
+	display: inline-block;
+	width: 75%;
+	position: relative;
+	padding: 0px;
+	margin: 0px;
+}
